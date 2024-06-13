@@ -1,0 +1,43 @@
+module.exports = {
+  extends: [
+    '@brokenbones/opencclint-config'
+  ],
+  conversion: {
+    from: 'cn',
+    to: 'tw',
+  },
+  ignoreWords: [
+    '台',
+    '里',
+    '周',
+    '占',
+    '伙',
+    '松',
+    '爱',
+    '庄',
+    '后',
+    '了',
+    '裏',
+    '范',
+    '布',
+    '叁',
+    '吃',
+  ],
+  exclude: [
+    '*.min.*',
+    '*.d.ts',
+    'CHANGELOG.md',
+    'dist',
+    'LICENSE*',
+    'temp',
+    'package-lock.json',
+    'pnpm-lock.yaml',
+    'yarn.lock',
+    '__snapshots__',
+    '.github',
+    '.vitepress',
+    '.vscode',
+    'node_modules',
+    'opencclint.*',
+  ],
+}

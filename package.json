@@ -1,0 +1,24 @@
+{
+  "name": "opencclint-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "brokenbonesdd",
+  "license": "ISC",
+  "devDependencies": {
+    "@opencclint/cli": "^2.0.4",
+    "@brokenbones/opencclint-config": "^0.0.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx,vue,json,md}": [
+      "opencclint --fix",
+      "git add"
+    ]
+  }
+}
