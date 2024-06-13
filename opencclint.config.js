@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    '@brokenbones/opencclint-config'
+    'opencclint-config'
   ],
   conversion: {
     from: 'cn',
